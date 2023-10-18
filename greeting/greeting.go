@@ -2,6 +2,9 @@ package greeting
 
 import "fmt"
 
-func SayHello() {
-	fmt.Println("Hello, World!")
+func SayHello(s string) {
+	if s == "" {
+		s = "World"
+	}
+	fmt.Printf("Hello, %s!\n", s)
 }
